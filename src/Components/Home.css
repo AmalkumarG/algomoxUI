@@ -1,0 +1,354 @@
+*{
+    margin: 0px;
+}
+
+.usericon{
+    width: 40px;
+    border-radius: 20px;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.command{
+    height: 20px;
+    
+}
+
+.search,.searchbar{
+    background-color: rgb(240, 238, 238);
+}
+.bestseller{
+    background-color: rgb(218, 218, 252);
+    width:fit-content;
+    height: fit-content;
+    color:rgb(93, 93, 253);
+    font-weight: bold;
+    padding: 2px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.socailIcons img{
+    width: 15px;
+    margin: 5px;
+}
+
+.socailIcons{
+    width: fit-content;
+    height: fit-content;
+    border: rgb(162, 159, 159) 1px solid;
+    display: flex;
+    align-items: center;
+  padding: 2px;
+    border-radius: 10px;
+}
+
+.displayImage{
+    display: grid;
+    grid-template-columns: 60% 40% 40%;
+  grid-gap: 10px;
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    grid-auto-columns: minmax(250px,1fr);
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.displayImage img{
+   
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    
+}
+
+.displayImage :first-child{
+    grid-row: span 2;
+    grid-column: 1;
+ 
+}
+
+.displayImage :nth-child(2){
+    grid-row: span 1;
+    grid-column: 2;
+}
+.displayImage :nth-child(3){
+    grid-row: span 1;
+    grid-column: 2;
+}
+
+.headings{
+    display: inline-flex;
+    align-items: center;
+    
+
+}
+
+.headings h6{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.rateNrange{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    justify-content: space-between;
+}
+.rateNrange p{
+  
+  padding-top: 5px;
+}
+
+/* .slider{
+-webkit-appearance: none;
+height: 20px;
+background: linear-gradient(90deg,blue 60%,white 60%);
+border-radius: 10px;
+overflow: hidden;
+}
+.slider::-webkit-slider-thumb{
+-webkit-appearance: none;
+width: 15px;
+height: 15px;
+background-color: blue;
+    
+} */
+.slider::-webkit-slider-thumb{
+    /* -webkit-appearance: none; */
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    
+    
+        
+    } 
+
+    .size{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        border: rgb(225, 221, 221) 1px solid;
+        border-radius: 20px;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+.guide{
+    background-color: rgb(247, 245, 245);
+    
+    border-top: rgb(197, 194, 194) 1px solid; 
+    border-bottom:rgb(197, 194, 194) 1px solid ;
+}
+.row{
+    margin-right: 0;
+    padding-right:0
+}
+.cartButton{
+
+    color: rgb(188, 187, 187);
+
+   
+}
+.cartButton   p{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.rate{
+    color: rgb(105, 105, 219);
+    font-size: 20px;
+    font-weight: bold;
+}
+.info{
+    background-color: rgb(249, 249, 220);
+    color: orange;
+}
+.buyButton .button{
+    display: flex;
+    height: 50px;
+    color: white;
+    background-color: rgb(105, 105, 219);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+.priceButton{
+   
+    width: 50%;
+    padding-left: 10px;
+   
+ 
+}
+
+.buy{
+    background-color: rgb(67, 67, 236);
+    width: 50%;
+    border-radius:0 10px 10px 0;
+    text-align: center;
+    padding-top: 10px;
+}
+.recentImg{
+    height: 250px;
+    
+    object-fit: cover;
+}
+.cards{
+    margin: 20px;
+    width: 18rem;
+}
+/* .recent{
+       
+    display: grid;
+    
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr)) ;
+grid-auto-rows: 200px;
+grid-gap: 10px;
+grid-auto-flow: dense;
+grid-auto-columns: minmax(250px,1fr);
+padding-left: 20px;
+
+
+    
+} */
+
+.recent{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  
+}
+
+@media (max-width:1090px){
+
+    .recent{
+        display: flex;
+        overflow-x: scroll;
+        justify-content: space-between;
+    }
+    /* .card{
+       z-index: 10;
+      width:200px;
+    } */
+}
+.flexNalign{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 30px;
+  
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+ 
+  
+}
+
+.recentBtn{
+    background-color: rgb(127, 138, 255);
+    border-radius: 5px;
+    padding: 2px;
+    width: 40px;
+    text-align: center;
+}
+.recentBtn2{
+    background-color: rgb(222, 223, 227);
+    border-radius: 5px;
+    padding: 2px;
+    color: rgb(108, 107, 107);
+    width: 40px;
+    text-align: center;
+   
+}
+
+
+.recent::-webkit-scrollbar{
+    display: none;
+}
+.view{
+    background-color: rgb(244, 240, 240);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: solid 1px rgb(207, 205, 205);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+a{
+    text-decoration: none;
+}
+footer{
+    background-color: rgb(233, 232, 232);
+    color: black;
+}
+
+.commentFilter{
+    background-color: rgb(238, 235, 235);
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(162, 160, 160) solid 1px;
+    border-radius: 20px;
+    color: rgb(170, 165, 165);
+
+}
+.activeF{
+    background-color: rgb(203, 206, 241);
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(127, 138, 255) solid 1px;
+    border-radius: 20px;
+    color: rgb(80, 78, 78);
+
+}
+
+.commentnum{
+    background-color: rgb(127, 138, 255);
+    padding: 5px;
+    border-radius: 5px;
+}
+.grayText{
+    color: rgb(160, 156, 156);
+}
+
+.commentBtn{
+    position: relative;
+    bottom: 10px;
+    border: 1px gray ;
+    border-radius: 10px;
+    background-color: rgb(127, 138, 255);
+    color: white;
+    font-weight: 500;
+    padding: 5px;
+}
+ul li {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.infoText{
+    font-size: 12px;
+}
+
+.goback{
+    background-color: rgb(244, 240, 240) ;
+    height: 40px;
+    width:100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
