@@ -35,6 +35,8 @@ function Details() {
   const [selected, setSelected] = useState();
   return (
     <div>
+
+{/* go back */}
     <div className="row ps-4 pe-4 mt-4">
       <div className="col-2">
       <div className="goback">
@@ -47,6 +49,9 @@ function Details() {
       <p style={{color:'rgb(127, 138, 255)'}}>Red suit Germa 66</p>
       </div>
     </div>
+
+
+{/* product heading */}
       <div className="row p-4">
         <div className="col-8 text-center d-flex justify-content-center align-items-center p-4">
           <h3 className="fw-bold">Vinsmoke Red Suit Germa Double Six66</h3>
@@ -61,6 +66,8 @@ function Details() {
           </div>
         </div>
       </div>
+
+      {/* image grid */}
       <div className="row">
         <div className="col-12 displayImage">
           <img src="https://rukminim1.flixcart.com/image/832/832/ktd9mkw0/t-shirt/q/h/j/l-necktop-red-base-41-original-imag6qdhgygmybkh.jpeg?q=70" />
@@ -68,6 +75,8 @@ function Details() {
           <img src="https://rukminim1.flixcart.com/image/832/832/ktd9mkw0/t-shirt/6/d/y/l-necktop-red-base-41-original-imag6qdhyqpczxng.jpeg?q=70" />
         </div>
       </div>
+
+      {/* overview  */}
       <div className="row p-4 ">
         <div className="col-md-8 col-sm-12 mt-2">
           <div className="row ps-5 pe-5">
@@ -97,6 +106,8 @@ function Details() {
               </div>
             </div>
           </div>
+
+          {/* rating  */}
           <div className="row ps-5 pe-5 mt-4">
             <div className="col-12 border-bottom border-1 border-secondary ">
               <div className="headings">
@@ -112,7 +123,7 @@ function Details() {
                 <div className="col-4">
                   <h1>4.9</h1>
                   {rating.map((rate) => (
-                    <StarFill color="gold" />
+                    <StarFill color="gold" /> //star
                   ))}
                   <p style={{ fontSize: 10, color: "gray" }}>40 Rating</p>
                 </div>
@@ -153,13 +164,15 @@ function Details() {
             </div>
           </div>
         </div>
+
+        {/* size and payment */}
         <div className="col-md-4 col-sm-12">
           <div className="border border-2">
             <p className="fw-bold ms-4">Select size</p>
             <div className="size ms-4">
               {size.map((size) => (
                 <p
-                  onClick={() => setSelected(size)}
+                  onClick={() => setSelected(size)}  //select size
                   className={`m-2 border rounded-circle text-center ${
                     size == selected && "bg-primary text-light"
                   }`}
@@ -211,7 +224,7 @@ function Details() {
           </div>
         </div>
       </div>
-
+{/* comments  */}
       <div className="row ps-5  mb-4">
         <div className="col-md-8 ">
           <div className="row">
@@ -361,7 +374,7 @@ function Details() {
           </div>
         </div>
       </div>
-
+{/* recent products  */}
       <div className="row ps-5 pe-5 ">
         <div className="col-12 mt-5">
           <div className="row">
@@ -401,7 +414,7 @@ function Details() {
           </div>
         </div>
       </div>
-
+{/* recent products row 2 */}
       <div className="row ps-5 pe-5">
         <div className="col-12">
           <div className="row">
@@ -441,7 +454,7 @@ function Details() {
           </div>
         </div>
       </div>
-
+{/* footer  */}
       <footer class=" text-center">
         <div class="container p-4 pt-5">
           <div class="row">

@@ -11,8 +11,9 @@ function App() {
   
         <NavBar/>
         <HomeBar/>
+  </header>
         <Details/>
-      </header>
+      
     </div>
   );
 }
